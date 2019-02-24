@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(void) {
+ long long int a=0,b=0,c=0,d=0,flag=1,e,sum,area;
+  scanf("%I64d",&e);
+  do
+  {
+    if(flag==1)
+    {
+      flag=2;
+      a++;
+    }
+    else if(flag==2)
+    {
+      flag=3;
+      b++;
+    }
+    else if(flag==3)
+    {
+      flag=4;
+      c++;
+    }
+    else if(flag==4)
+    {
+      flag=1;
+      d++;
+    }
+    sum=a+b+c+d;
+    area=(a+c)*(b+d);
+  }while(e>area);
+  printf("%I64d\n",sum);
+  return 0;
+}
