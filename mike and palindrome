@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char a[100],b[100],h;
+	int co=0,l,ha;
+	gets(a);
+	l=strlen(a);
+	ha=l/2;
+	for(int i=0;i<ha;i++)
+	{
+		if(a[i]!=a[l-i-1])
+		co++;
+	}
+    if(l%2!=0)
+    {
+		if(co>1)
+		printf("NO");
+		else if(co<1)
+		printf("YES");
+		else
+		printf("YES");
+	}
+	else
+	{
+		if(co==1)
+		printf("YES");
+		else
+		printf("NO");
+	}
+	return 0;
+}
