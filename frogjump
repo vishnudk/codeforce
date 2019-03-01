@@ -1,0 +1,26 @@
+#include<stdio.h>
+long long int pos(long long int,long long int,long long int);
+int main()
+{
+	int t;
+	long long int a,b,k;
+	scanf("%d",&t);
+	while(t>0)
+	{t--;
+		long long int pos1;
+		scanf("%I64d%I64d%I64d",&a,&b,&k);
+		pos1=pos(a,b,k);
+		printf("%I64d\n",pos1);
+    }
+    return 0;
+}
+long long int pos(long long int a,long long int b,long long int k)
+{
+	long long int x=0;
+	long long int re,fo;
+	re=k/2;
+	fo=k-re;
+	x=(fo*a)-(re*b);
+    
+    return x;
+}
