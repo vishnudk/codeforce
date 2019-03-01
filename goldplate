@@ -1,0 +1,22 @@
+#include<stdio.h>
+int fun(int,int,int);
+int main()
+{
+	 int l,b,k;
+	 scanf("%d%d%d",&l,&b,&k);
+	 int t;
+	 t=fun(l,b,k);
+	 printf("%d",t);
+	 return 0;
+}
+
+int fun(int l,int b, int k)
+{int c=0;
+	do
+	{c=c+((l*2)+((b-2)*2));
+		l=l-4;
+		b=b-4;
+		k--;
+	}while(k>0);
+	return c;
+}
