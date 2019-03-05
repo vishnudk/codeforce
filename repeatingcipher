@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() 
+{char ch;
+int a=0,b=1,n;
+scanf("%d",&n);
+n++;
+do
+{n--;
+  scanf("%c",&ch);
+  a++;
+  if(a==b)
+  {
+    b++;
+    a=1;
+    printf("%c",ch);
+  }
+}while(n>0);
+  return 0;
+}
