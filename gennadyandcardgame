@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	char a[3],b[3],c[3],d[3],f[3],e[3];
+	scanf("%s",f);
+	scanf("%s",a);
+	scanf("%s",b);
+	scanf("%s",c);
+	scanf("%s",e);
+	scanf("%s",d);
+	int f1=0;
+	for(int i=0;i<2;i++)
+	{
+		for(int j=0;j<2;j++)
+		{   //printf("%c",e[j]);
+			if(a[j]==f[i] || b[j]==f[i] || c[j]==f[i] || d[j]==f[i] || e[j]==f[i])
+			{
+				f1=-1;
+				break;
+			}
+		}
+		if(f1==-1)
+		break;
+	}
+	if(f1==-1)
+	printf("YES");
+	else
+	printf("NO");
+	return 0;
+}
