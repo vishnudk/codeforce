@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) {
+ int a;
+scanf("%d",&a);
+printf("\n distance in meter is: %d",a*1000);
+printf("\n distance in centimeter is: %d",a*1000*100);
+printf("\n distance in foot is: %f",a*1000*3.28);
+printf("\n distance in inch is: %f",a*1000*39.37);
+  return 0;
+}
